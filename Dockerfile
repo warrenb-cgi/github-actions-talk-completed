@@ -14,7 +14,7 @@ RUN yarn install
 COPY example-app/client ./
 RUN yarn build
 
-FROM openjdk:17.0.2 as build-java
+FROM openjdk:18.0.1.1 as build-java
 
 WORKDIR /app/resourceserver/src
 
@@ -39,6 +39,6 @@ FROM scratch as windows-export
 COPY --from=build-aggregation /app /
 COPY server/run.bat /
 
-FROM openjdk:17.0.2
+FROM openjdk:18.0.1.1
 COPY --from=build-aggregation /app /app
 ENTRYPOINT ["java", "-Dlogging.level.org.springframework.web=DEBUG", "-Dspring.resources.static-locations=file:/app/static/", "-jar", "/app/resourceserver.jar"]
