@@ -9,6 +9,6 @@
   "license": "none",
   "devDependencies": {
     "@playwright/test": "^1.22.2",
-    "@types/node": "^17.0.42"
+    "@types/node": "^18.0.3"
   }
 }
