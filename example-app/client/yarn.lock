@@ -996,7 +996,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
   version "7.18.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.6.tgz#6a1ef59f838debd670421f8c7f2cbb8da9751580"
   integrity sha512-t9wi7/AW6XtKahAe20Yw0/mMljKq0B1r2fPdvaAdV/KPDZewFXdaaa6K7lxmZBZ8FBNpCiAT6iHPmd6QO9bKfQ==
@@ -1287,7 +1287,7 @@
   dependencies:
     lodash "^4.17.15"
 
-"@okta/okta-auth-js@^3.2.2":
+"@okta/okta-auth-js@^3.2.6":
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/@okta/okta-auth-js/-/okta-auth-js-3.2.6.tgz#9eb457ee46576ade2cab9c2524096f0c91f17edf"
   integrity sha512-4N3XkaHUs2QbUR3ymg+PtoPAGluU3IkBK1kIfoYWeONXTyz0v/PpAKgHDe3RJkvRkDQzvAJDdT6VL29wIYE1ww==
@@ -1299,15 +1299,14 @@
     tiny-emitter "1.1.0"
     xhr2 "0.1.3"
 
-"@okta/okta-react@3.0.4":
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/@okta/okta-react/-/okta-react-3.0.4.tgz#bec4ac07c9d5c341df6c4dee8fc6d4b363678198"
-  integrity sha512-dDP9Rf4K+eGK1vlsDkHtWBrwfoEFy52Wmo4AxJ+T9lcF6X+s5gwoGeMM520cMFlfymRptm56xuy0XdMWV1bk8Q==
+"@okta/okta-react@3.0.11":
+  version "3.0.11"
+  resolved "https://registry.yarnpkg.com/@okta/okta-react/-/okta-react-3.0.11.tgz#4ae5f78b19ddd3276637d4f83674eb9067deca4b"
+  integrity sha512-CYTF9vlujFSinbP0eq2/hu66vHNQrhmuxT7XOJHRJhS5Fvd55LJq2NeyNkIb3IJ9RgQD8YKkrX3nJ7B1DfrwIg==
   dependencies:
+    "@babel/runtime" "^7.11.2"
     "@okta/configuration-validation" "^0.4.1"
-    "@okta/okta-auth-js" "^3.2.2"
-    babel-runtime "^6.26.0"
-    prop-types "^15.5.10"
+    "@okta/okta-auth-js" "^3.2.6"
 
 "@svgr/babel-plugin-add-jsx-attribute@^4.2.0":
   version "4.2.0"
@@ -8444,7 +8443,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.4"
 
-prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
