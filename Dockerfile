@@ -2,7 +2,7 @@
 #   dependabot expects dot-delimited version numbers (for example, https://semver.org/)
 #   Node has a concept of long-term support releases. However, you don't want a tag that can update outside of a code change.
 #   In these cases, you can use a generic tag (lts) and pin it to a specific SHA, and dependabot will update that instead.
-FROM node:lts@sha256:2d085d25d573a58266319362f32e978f94e06214a62fae15c02d4c4f0567b64f as build-node
+FROM node:lts@sha256:e6f94fb2c0f3473aed4cfaa779c7b557f9fe5383640b8e53262f32682c3dd979 as build-node
 
 WORKDIR /app/client
 
