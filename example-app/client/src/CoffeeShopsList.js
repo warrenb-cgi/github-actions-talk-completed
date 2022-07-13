@@ -17,7 +17,7 @@ const CoffeeShop = (props) => (
       <div>{props.address}</div>
       <div>{props.phone}</div>
     </div>
-    <div className="coffeeshop-footer">
+    <div className="coffeeshop-footer d-flex justify-content-between">
       <Button color="secondary" tag={Link} to={'/coffee-shops/' + props.id}>Edit</Button>
       <Button color="danger" onClick={() => props.remove(props.id)}>Delete</Button>
     </div>
