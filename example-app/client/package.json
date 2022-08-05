@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@okta/okta-react": "3.0.11",
-    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^14.4.2",
     "bootstrap": "^4.5.2",
