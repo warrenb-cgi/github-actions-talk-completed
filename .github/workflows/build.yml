@@ -13,7 +13,7 @@ jobs:
       # this is a shallow checkout of the edge commit only
       # add all history: https://github.com/actions/checkout#fetch-all-history-for-all-tags-and-branches
       # add tags https://github.com/actions/checkout/issues/290#issuecomment-714628110
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.1.0
       - id: setup-buildx
         uses: docker/setup-buildx-action@v2
       - run: mkdir -p /tmp/example-app
@@ -52,7 +52,7 @@ jobs:
     runs-on: ${{ matrix.os }}-latest
     steps:
       - id: checkout-tests
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.1.0
         with:
           path: tests
       - uses: actions/setup-node@v2
@@ -93,7 +93,7 @@ jobs:
       - id: checkout-publish
         # proceed even if tests failed
         if: ${{ always() }}
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.1.0
         with:
           ref: gh-pages
           path: publish
