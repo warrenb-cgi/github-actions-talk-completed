@@ -10,7 +10,7 @@ jobs:
     if: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
     steps:
       - id: dependabot-metadata
-        uses: dependabot/fetch-metadata@v1.3.1
+        uses: dependabot/fetch-metadata@v1.3.5
       - name: Enable auto-merge for Dependabot PRs
         if: ${{steps.dependabot-metadata.outputs.package-ecosystem != 'github_actions'}}
         env:
