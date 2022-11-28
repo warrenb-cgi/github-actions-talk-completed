@@ -5,7 +5,7 @@ plugins {
     id("io.spring.dependency-management") version "1.1.0"
     kotlin("jvm") version "1.3.72"
     kotlin("plugin.spring") version "1.3.72"
-    kotlin("plugin.jpa") version "1.3.72"
+    kotlin("plugin.jpa") version "1.7.22"
 }
 
 group = "com.okta.kotlin"
