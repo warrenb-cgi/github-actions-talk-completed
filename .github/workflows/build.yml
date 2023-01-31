@@ -18,7 +18,7 @@ jobs:
         uses: docker/setup-buildx-action@v2
       - run: mkdir -p /tmp/example-app
       - id: build-container
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: .
           cache-from: type=gha
@@ -26,7 +26,7 @@ jobs:
           tags: example-app:latest
           outputs: type=docker,dest=/tmp/example-app/image.tar
       - id: build-windows-tar
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: .
           cache-from: type=gha
